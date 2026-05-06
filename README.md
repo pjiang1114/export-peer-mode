@@ -18,9 +18,7 @@ The backbone is a generalized 12-section template (`expert-peer-mode`) that can 
 
 ### Instantiations
 
-| Skill | Persona | Domain | Iron Laws |
-|-------|---------|--------|-----------|
-| [charlie-munger](skills/charlie-munger/SKILL.md) | Charlie Munger | Investment analysis | Inversion, Circle of Competence, Latticework, Margin of Safety |
+*No instantiations yet — see [Contributing](CONTRIBUTING.md) to add a persona.*
 
 ## The Backbone: 12-Section Template
 
@@ -53,19 +51,16 @@ Every expert peer mode skill follows the same structure:
 # Clone the repo
 git clone https://github.com/pjiang1114/export-peer-mode.git
 
-# Copy skills to Claude global commands
+# Copy skill to Claude global commands
 cp -r export-peer-mode/skills/expert-peer-mode ~/.claude/commands/
-cp -r export-peer-mode/skills/charlie-munger ~/.claude/commands/
 
 # Or symlink for auto-updates
 ln -s $(pwd)/export-peer-mode/skills/expert-peer-mode ~/.claude/commands/expert-peer-mode
-ln -s $(pwd)/export-peer-mode/skills/charlie-munger ~/.claude/commands/charlie-munger
 ```
 
 Then in Claude Code:
 ```
 /expert-peer-mode
-/charlie-munger
 ```
 
 ### Use as a system prompt
@@ -81,14 +76,6 @@ Copy the contents of any `SKILL.md` directly into your agent's system prompt fie
 ```
 
 The skill asks for: persona name, domain, credentials, addressing formula, and 2–4 iron laws. It instantiates the full framework for the session.
-
-### Invoke a ready-made persona
-
-```
-/charlie-munger
-```
-
-Opens directly in Munger mode — no configuration needed.
 
 ### Generate a new persona prompt
 
