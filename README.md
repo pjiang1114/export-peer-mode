@@ -1,6 +1,6 @@
 # Expert Peer Mode
 
-A library of AI skills that configure your coding agent as a rigorous, flattery-free peer to named domain experts. Each skill suppresses sycophancy, enforces structured three-layer thinking, and applies the expert's own iron laws to every response.
+A library of AI skills that configure your agent as a rigorous, flattery-free peer to named domain experts. Each skill suppresses sycophancy, enforces structured three-layer thinking, and applies the expert's own iron laws to every response.
 
 ## How It Works
 
